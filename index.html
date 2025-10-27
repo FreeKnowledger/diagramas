@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Diagramas</title>
+	<style>
+
+		body {
+			font-family: Arial, sans-serif;
+			background: #f8f8f8;
+			margin: 20px;
+		}
+		 
+		button {
+			background-color: #ac1212;
+			color: white;
+			cursor: pointer;
+			padding: 10px 15px;
+			width: 100%;
+			border: none;
+			outline: none;
+			font-size: 16px;
+			transition: background-color 0.3s;
+			margin-top: 5px;
+			border-radius: 6px;
+			
+		}
+
+		.accordion {
+			background-color: #800000;
+			color: white;
+			cursor: pointer;
+			padding: 10px 15px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 16px;
+			transition: background-color 0.3s;
+			margin-top: 5px;
+			border-radius: 6px;
+		}
+
+		.accordion:hover {
+			background-color: #680000;
+		}
+
+		.panel {
+			background-color: white;
+			display: none;
+			overflow: hidden;
+			border-left: 3px solid #800000;
+			padding-left: 10px;
+			margin-bottom: 5px;
+			border-radius: 0 0 6px 6px;
+		}
+
+		.panel a {
+			display: block;
+			padding: 5px 0;
+			text-decoration: none;
+			color: #3f0000;
+		}
+
+		.panel a:hover {
+			text-decoration: underline;
+		}
+
+		.subaccordion {
+			background-color: #e6e6e6;
+			color: #660000;
+			padding: 8px;
+			margin-top: 4px;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+
+		.subpanel {
+			display: none;
+			padding-left: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<h2>Diagramas</h2>
+	<a href="src/index.html">
+		<button>Códigos de Falha</button>
+	</a>
+
+	<!-- VOLKSWAGEN -->
+	<button class="accordion"> Volkswagen</button>
+	<div class="panel">
+		<div class="subaccordion">Motor EU3</div>
+		<div class="subpanel">
+			<a href="src/cummins-isb/index.html">Cummins ISB Constellation</a>
+			<a href="src/cummins-isb-worker/index.html">Cummins ISB Worker</a>
+			<a href="src/cummins-isc/index.html">Cummins isc</a>
+			<a href="src/mwm-ngd-370/index.html">MWM ngd 370</a>
+			<a href="src/mwm-serie-12-constelation/index.html">MWM serie 12 constellation</a>
+			<a href="src/mwm-serie-12-worker/index.html">MWM serie 12 worker</a>
+			<a href="src/mwm-sprint/index.html">MWM sprint</a>
+		</div>
+		<div class="subaccordion">Motor EU5 </div>
+		<div class="subpanel">
+			<a href="src/man-d08/index.html">MAN D08</a>
+			<a href="src/cummins-isl/index.html">Cummins isl</a>
+			<a href="src/cummins-isf/index.html">Cummins isf</a>
+			<a href="src/cummins-isf-2-geracao/index.html">Cummins isf 2 ger</a>
+		</div>
+		<div class="subaccordion">Motor EU6 </div>
+		<div class="subpanel">
+			<a href="src/motor-d08-euro-6/index.html">MAN D08 EU6</a>
+			<a href="src/motor-d26-euro-6/index.html">MAN D26 EU6</a>
+		</div>
+		<div class="subaccordion">Arla 32 </div>
+		<div class="subpanel">
+			<a href="src/emitec/index.html">Emitec</a>
+			<a href="src/bosch-isf-1-geracao/index.html">Bosch ISF 1ª Geração</a>
+		</div>
+		<div class="subaccordion">Transmissão </div>
+		<div class="subpanel">
+			<a href="src/tcu-zf-9s-16s/index.html">TCU ZF 9s 16s</a>
+			<a href="src/v-tronic-16as/index.html">V-Tronic 16s</a>
+			<a href="src/transmissao-e-bloqueio-antigos-euro3/index.html">V-Tronic 6s Truck</a>
+		</div>
+		<div class="subaccordion">Unidade Lógica </div>
+		<div class="subpanel">
+			<a href="src/antigos-euro-3/index.html">Antigos Euro 3</a>
+			<a href="src/cummins-isl-e-man/index.html">Constellation</a>
+			<a href="src/novo-delivery-bsg/index.html">Novo Delivery BSG</a>
+			<a href="src/cummins-isf-2/index.html">Delivery e Volksbus</a>
+		</div>
+		<div class="subaccordion">Freio ABS </div>
+		<div class="subpanel">
+			<a href="src/absebd/index.html">ABS</a>
+		</div>
+		<div class="subaccordion">Painel e TCO </div>
+		<div class="subpanel">
+			<a href="src/man-190/index.html">Novo Delivery BSG</a>
+			<a href="src/delivery-e-onibus/index.html">Delivery e onibus</a>
+			<a href="src/constellation/index.html">Constellation</a>
+			<a href="src/tacografo-euro5/index.html">TCO EU5</a>
+		</div>
+		<div class="subaccordion">PTM </div>
+		<div class="subpanel">
+			<a href="src/ptm/index.html">PTM</a>
+		</div>
+		<div class="subaccordion">Rede CAN </div>
+		<div class="subpanel">
+			<a href="src/isl-e-d08/index.html">Constellation</a>
+			<a href="src/delivery-e-volksbus/index.html">Delivery e Volksbus</a>
+		</div>
+	</div>
+	</div>
+
+	<!-- MAN -->
+	<button class="accordion">MAN</button>
+	<div class="panel">
+		<div class="subaccordion">Motor </div>
+		<div class="subpanel">
+			<a href="src/edc7-2/index.html">EDC7 2</a>
+		</div>
+		<div class="subaccordion">Arla 32 </div>
+		<div class="subpanel">
+			<a href="src/edc7/index.html">Denoxtronic</a>
+		</div>
+		<div class="subaccordion">Módulo de Bordo </div>
+		<div class="subpanel">
+			<a href="src/zbr/index.html">ZBR</a>
+		</div>
+		<div class="subaccordion">Computador </div>
+		<div class="subpanel">
+			<a href="src/ffr/index.html">FFR</a>
+		</div>
+		<div class="subaccordion">Freio </div>
+		<div class="subpanel">
+			<a href="src/abs/index.html">ABS</a>
+		</div>
+		<div class="subaccordion">Transmissão </div>
+		<div class="subpanel">
+			<a href="src/astronic/index.html">Astronic</a>
+		</div>
+	</div>
+
+	<!-- MERCEDES -->
+	<button class="accordion"> Mercedes</button>
+	<div class="panel">
+		<div class="subaccordion">Motor </div>
+		<div class="subpanel">
+			<a href="src/central-mr-euro5/index.html">Central MR</a>
+			<a href="src/central-motor-pld-antigos/index.html">Central PLD</a>
+			<a href="src/central-motor-mr/index.html">Central Motor MR Actros</a>
+		</div>
+		<div class="subaccordion">Arla 32 </div>
+		<div class="subpanel">
+			<a href="src/bluetec-5/index.html">Bluetec 5</a>
+			<a href="src/bluetec-5-2/index.html">Bluetec 5.2</a>
+		</div>
+		<div class="subaccordion">Transmissão </div>
+		<div class="subpanel">
+			<a href="src/gs-telligent-gs7/index.html">GS Telligent GS7</a>
+			<a href="src/eps-telligent-gs2/index.html">EPS Telligent GS2</a>
+			<a href="src/gs-power-shift/index.html">GS POWERSHIFT</a>
+		</div>
+		<div class="subaccordion">Módulo Cabine </div>
+		<div class="subpanel">
+			<a href="src/modulo-adm-euro3/index.html">MODULO ADM EU3</a>
+			<a href="src/modulo-fr-conector-c15-pinos/index.html">MODULO FR C15 pinos</a>
+			<a href="src/modulo-frcpc-conector-c21-pinos/index.html">Módulo FRCPC C21 Pinos</a>
+			<a href="src/modulo-fr-cpc-actros/index.html">MODULO FR/CPC Actros</a>
+		</div>
+		<div class="subaccordion">Painel </div>
+		<div class="subpanel">
+			<a href="src/painel-axor/index.html">Painel Axor</a>
+			<a href="src/painel-actros/index.html">Painel Actros</a>
+			<a href="src/atego-01/index.html">Atego 1</a>
+			<a href="src/atego-02/index.html">Atego 2</a>
+		</div>
+		<div class="subaccordion">Tacógrafo </div>
+		<div class="subpanel">
+			<a href="src/tacografo-3/index.html">Tacógrafo</a>
+			<a href="src/tacografo-actros/index.html">Tacógrafo Actros</a>
+		</div>
+		<div class="subaccordion">Suspensão Pneumática </div>
+		<div class="subpanel">
+			<a href="src/suspensao/index.html">Suspensão</a>
+		</div>
+		<div class="subaccordion">Rede Can </div>
+		<div class="subpanel">
+			<a href="src/ponto-estrela-z1/index.html">Ponto Estrela Z1</a>
+		</div>
+		<div class="subaccordion">Módulo de Manutenção </div>
+		<div class="subpanel">
+			<a href="src/manutencao-ws/index.html">Manutenção WS</a>
+		</div>
+		<div class="subaccordion">Módulos Frontal e Traseiro </div>
+		<div class="subpanel">
+			<a href="src/frontal-fm/index.html">Frontal FM</a>
+			<a href="src/traseiro-hm/index.html">Traseiro HM</a>
+		</div>
+		<div class="subaccordion">Módulo de Portas </div>
+		<div class="subpanel">
+			<a href="src/porta-do-motorista-tmf/index.html">Porta motorista</a>
+			<a href="src/porta-passageiro-tmb/index.html">Porta Passageiro</a>
+			<a href="src/trava-das-portas-zv/index.html">Trava das portas</a>
+		</div>
+		<div class="subaccordion">Módulo Básico </div>
+		<div class="subpanel">
+			<a href="src/basico-gm/index.html">Básico GM</a>
+		</div>
+		<div class="subaccordion">Módulo de Interruptores </div>
+		<div class="subpanel">
+			<a href="src/interruptores-msf/index.html">Interruptores MSF</a>
+		</div>
+		<div class="subaccordion">Freio ABS </div>
+		<div class="subpanel">
+			<a href="src/abs-actros/index.html">ABS Actros</a>
+			<a href="src/freio-abs/index.html">Freio ABS</a>
+		</div>
+		<div class="subaccordion">Caixa de Fusíveis </div>
+		<div class="subpanel">
+			<a href="src/fusiveis-serie-900/index.html">Fusíveis Serie 900</a>
+			<a href="src/fusiveis-acxor/index.html">Fusíveis Axor</a>
+			<a href="src/fusiveis-actros/index.html">Fusíveis Actros</a>
+		</div>
+	</div>
+
+	<!-- SCANIA -->
+	<button class="accordion">Scania</button>
+	<div class="panel">
+		<div class="subaccordion">Motor </div>
+		<div class="subpanel">
+			<a href="src/dc11-e-12-euro3/index.html">DC11 e DC12 EU3</a>
+			<a href="src/motor-ems6/index.html">Motor EMS6</a>
+			<a href="src/motor-ems6-v8/index.html">Motor EMS6 V8</a>
+		</div>
+		<div class="subaccordion">Arla 32 </div>
+		<div class="subpanel">
+			<a href="src/denoxtronic-1-1/index.html">Denoxtronic 1.1</a>
+		</div>
+		<div class="subaccordion">Coordenador </div>
+		<div class="subpanel">
+			<a href="src/coordenador-006/index.html">Coordenador 006</a>
+			<a href="src/coordenador-007/index.html">Coordenador 007</a>
+		</div>
+		<div class="subaccordion">Transmissão </div>
+		<div class="subpanel">
+			<a href="src/opticruise-grs900r-antigas/index.html">Opticruise GRS900R Antigas</a>
+			<a href="src/de-grs905r/index.html">Opticruise GRS905R</a>
+			<a href="src/eca-atuador-eletronico-de-embreagem/index.html">ECA</a>
+		</div>
+		<div class="subaccordion">Controle Pneumático </div>
+		<div class="subpanel">
+			<a href="src/modulo-aps/index.html">Módulo APS</a>
+		</div>
+		<div class="subaccordion">Tacógrafo </div>
+		<div class="subpanel">
+			<a href="src/tacografo/index.html">Tacógrafo</a>
+		</div>
+	</div>
+
+	<!-- VOLVO -->
+	<button class="accordion">Volvo</button>
+	<div class="panel">
+		<div class="subaccordion">Motor </div>
+		<div class="subpanel">
+			<a href="src/mid-128-motor/index.html">MID 128 Motor D12</a>
+			<a href="src/mid-128-motor-d13/index.html">MID 128 Motor D13</a>
+			<a href="src/mid-128-motor-mwm-euro3/index.html">MID 128 MWM EU3</a>
+			<a href="src/mid-128-motor-mwm-euro5/index.html">MID 128 MWM EU5</a>
+		</div>
+		<div class="subaccordion">Arla 32 </div>
+		<div class="subpanel">
+			<a href="src/denoxtronic-2-1/index.html">Denoxtronic 2.1</a>
+		</div>
+		<div class="subaccordion">Cabine </div>
+		<div class="subpanel">
+			<a href="src/mid-144-vecu/index.html">VECU</a>
+			<a href="src/mid-144-vecu-motor-d13/index.html">VECU D13</a>
+		</div>
+		<div class="subaccordion">Freio </div>
+		<div class="subpanel">
+			<a href="src/mid-136-abs/index.html">ABS</a>
+		</div>
+		<div class="subaccordion">Suspensão </div>
+		<div class="subpanel">
+			<a href="src/mid-150-suspencao/index.html">Suspensão Pneumática</a>
+		</div>
+		<div class="subaccordion">Tacógrafo </div>
+		<div class="subpanel">
+			<a href="src/mid-220-tacografo/index.html">TCO</a>
+		</div>
+		<div class="subaccordion">Painel de Instrumentos </div>
+		<div class="subpanel">
+			<a href="src/mid-140-painel/index.html">MID 140 Painel</a>
+		</div>
+		<div class="subaccordion">Iluminação </div>
+		<div class="subpanel">
+			<a href="src/mid-216-lcm/index.html">MID 216 LCM</a>
+		</div>
+		<div class="subaccordion">Transmissão </div>
+		<div class="subpanel">
+			<a href="src/manopla-i-shift-gsecu-geco/index.html">Manopla I-Shift GSECO (GECO)</a>
+			<a href="src/tecu-i-shift-classico/index.html">TECU I-shift Clássico</a>
+			<a href="src/tecu-i-shift-versao-d/index.html">TECU Verão D FH4</a>
+			<a href="src/tecu-i-shift-versao-e/index.html">TECU Verão E FH4</a>
+		</div>
+	</div>
+
+	<!-- FORD -->
+	<button class="accordion">Ford</button>
+	<div class="panel">
+		<div class="subaccordion">Motor </div>
+		<div class="subpanel">
+			<a href="src/cummins-isb-1-geracao/index.html">Cummins ISB 1ª Geração</a>
+			<a href="src/cummins-isb-cabine-nova/index.html">Cummins ISB Cabine nova</a>
+			<a href="src/cummins-isc-2/index.html">Cummins ISC</a>
+			<a href="src/cummins-isb-euro-5/index.html">Cummins ISB EU5</a>
+			<a href="src/cummins-isl-2/index.html">Cummins ISL EU5</a>
+			<a href="src/cummins-isf-3/index.html">Cummins ISF EU5</a>
+		</div>
+		<div class="subaccordion">Arla 32 </div>
+		<div class="subpanel">
+			<a href="src/arla-32/index.html">Emitec</a>
+		</div>
+		<div class="subaccordion">Painel de Instrumentos </div>
+		<div class="subpanel">
+			<a href="src/painel-de-instrumentos/index.html">Cabine nova</a>
+		</div>
+		<div class="subaccordion">Cabine </div>
+		<div class="subpanel">
+			<a href="src/conforto-rke/index.html">Conforto RKE</a>
+		</div>
+		<div class="subaccordion">Tacógrafo </div>
+		<div class="subpanel">
+			<a href="src/tacografo-2/index.html">Tacógrafo</a>
+		</div>
+	</div>
+
+	<script>
+		// Primeiro nível
+		const acc = document.getElementsByClassName("accordion");
+		for (let i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				const panel = this.nextElementSibling;
+				panel.style.display = panel.style.display === "block" ? "none" : "block";
+			});
+		}
+
+		// Segundo nível
+		const sub = document.getElementsByClassName("subaccordion");
+		for (let j = 0; j < sub.length; j++) {
+			sub[j].addEventListener("click", function () {
+				const panel = this.nextElementSibling;
+				panel.style.display = panel.style.display === "block" ? "none" : "block";
+			});
+		}
+	</script>
+
+</body>
+
+</html>
