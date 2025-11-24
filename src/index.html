@@ -2576,41 +2576,5 @@ border-radius: 0px;
 	<script>
 		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
 	</script>
-	<h2>Atalhos de Acesso Rápido</h2>
-	<button onclick="togglePanel(0)">Ir para Volkswagen</button>
-	<button onclick="togglePanel(1)">Ir para MAN</button>
-	<button onclick="togglePanel(2)">Ir para Mercedes</button>
-	<button onclick="togglePanel(3)">Ir para Scania</button>
-	<button onclick="togglePanel(4)">Ir para Volvo</button>
-	<button onclick="togglePanel(5)">Ir para Ford</button>
-	
-	
-	<script>
-	const acc = document.getElementsByClassName("accordion");
-	for (let i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function () {
-	this.classList.toggle("active");
-	const panel = this.nextElementSibling;
-	panel.style.display = panel.style.display === "block" ? "none" : "block";
-	});
-	}
-	
-	
-	const sub = document.getElementsByClassName("subaccordion");
-	for (let j = 0; j < sub.length; j++) {
-	sub[j].addEventListener("click", function () {
-	const panel = this.nextElementSibling;
-	panel.style.display = panel.style.display === "block" ? "none" : "block";
-	});
-	}
-	
-	function togglePanel(index) {
-	const accordion = acc[index];
-	const panel = accordion.nextElementSibling;
-	
-	const isOpen = panel.style.display === "block";
-	panel.style.display = isOpen ? "none" : "block";
-	}
-	</script>
 </body>
 </html>
